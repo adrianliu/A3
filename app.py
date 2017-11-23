@@ -1,11 +1,4 @@
-from flask import Flask
-app = Flask(__name__)
+from todo import app
 
-
-@app.route('/')
-def hello():
-    return 'Hello CS 1998!'
-
-
-if __name__ == '__main__':
-    app.run(host="0.0.0.0")
+app.debug = True
+app.run(host='0.0.0.0', port=5000)

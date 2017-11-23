@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In</title>
+</head>
+<body>
+
+<div class="claim-main">
+    <div class="claim-main-menu">
+        <form action="/submit/claim" method="POST">
+            Claim from:
+			<select name="to_user">
+				<option value="Please select the food bank" selected="selected" disabled="disabled">Please select the food bank</option>
+				<option value="1">Food Bank 1</option>
+				<option value="2">Food Bank 2</option>
+				<option value="3">Food Bank 3</option>
+				<option value="4">Food Bank 4</option>
+			</select>
+			<br><br>
+			Add Food Item:<br>
+			<select name="category_id">
+				<option value="Please select the category" selected="selected" disabled="disabled">Please select the category</option>
+				<option value="1">Category 1</option>
+				<option value="2">Category 2</option>
+				<option value="3">Category 3</option>
+				<option value="4">Category 4</option>
+			</select>
+			
+			<br><input type="text" name="food_item_id" value="" placeholder="Food Name">
+			<br><input type="text" name="quantity" value="" placeholder="Quantity">
+			<br><input type="text" name="weight" value="" placeholder="Weight"><br>
+
+			<br>Appointment Date:<input type="date" name="date">
+			<br>Appointment Time:<input type="time" name="time">
+			<br>Frequency
+			<select name="frequency">
+				<option value="Please select the frequency" selected="selected" disabled="disabled">Please select the frequency</option>
+				<option value="1">One Time</option>
+				<option value="2">Weekly</option>
+				<option value="3">Monthly</option>
+			</select>
+			<br>Do you have anything specific for this claim?
+			<br><textarea rows="4" cols="50" name="description"></textarea>
+			<br><br>
+			<input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

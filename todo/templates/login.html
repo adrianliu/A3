@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In</title>
+</head>
+<body>
+
+<link rel="stylesheet" href="/static/login.css" type="text/css">
+
+<div class="login">
+    <div class="login-screen">
+        <form action="/login" method="POST">
+            <div class="app-title">
+                <h1>Login</h1>
+            </div>
+ 
+            <div class="login-form">
+                <div class="control-group">
+                <input type="text" class="login-field" value="" placeholder="username" name="username">
+                <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
+ 
+                <div class="control-group">
+                <input type="password" class="login-field" value="" placeholder="password" name="password">
+                <label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+ 
+                <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >
+                <br>
+            </div>        
+        </form>
+
+        <form action="/signup/donor" method="POST">
+            <div class="control-group">
+                <input type="submit" value="Sign Up as Donor" class="btn btn-primary btn-large btn-block" >
+            </div>
+        </form>
+
+        <form action="/signup/consumer" method="POST">
+            <div class="control-group">
+                <input type="submit" value="Sign Up as Consumer" class="btn btn-primary btn-large btn-block" >
+            </div>
+        </form>
+
+        <form action="/signup/foodbank" method="POST">
+            <div class="control-group">
+                <input type="submit" value="Sign Up as Food Bank" class="btn btn-primary btn-large btn-block" >
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
