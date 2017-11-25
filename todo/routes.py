@@ -28,6 +28,7 @@ def login_complete():
 			user_type = user.user_type
 			session['username'] = username
 			session['user_type'] = user_type
+			session['logged_in'] = True
 			if user_type == constants.TYPE_DONOR:
 				return redirect(url_for('login_donor'))
 			elif user_type == constants.TYPR_CONSUMER:
